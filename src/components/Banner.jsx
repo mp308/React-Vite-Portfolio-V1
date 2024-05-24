@@ -7,6 +7,8 @@ import BannerPic1 from '../assets/images/content1.jpg';
 import BannerPic2 from '../assets/images/content2.jpg';
 import BannerPic3 from '../assets/images/content3.jpg';
 import BannerPic4 from '../assets/images/content4.jpg';
+import BannerPic5 from '../assets/images/content5.jpg';
+
 
 
 let bannerData = {
@@ -29,6 +31,9 @@ function Banner() {
         },
         {
             url: BannerPic4,
+        },
+        {
+            url: BannerPic5,
         },
     ];
     
@@ -66,11 +71,12 @@ function Banner() {
                 </div>
             </div> */}
 
-            <div className='max-w-[1850px] h-[500px] lg:h-[900px] sm:h-[600px] md:h-[700px] w-full m-auto py-16 px-4 relative group'>
+
+            <div className=' h-[500px] sm:h-[500px] md:h-[700px] lg:h-[800px] w-full m-auto py-16 px-4 relative group'>
                 <div
                     style={{ backgroundImage: `url(${slides[currentIndex].url})` }}
                     className='w-full h-full rounded-2xl bg-center bg-cover duration-500'
-                ></div>
+                ><h1 className='font-bebas text-outline text-8xl p-5 z-10 text-transparent'>Recommend</h1></div>
                 {/* Left Arrow */}
                 <div className='hidden group-hover:block absolute top-[50%] -translate-x-0 translate-y-[-50%] left-5 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer'>
                     <BsChevronCompactLeft onClick={prevSlide} size={30} />

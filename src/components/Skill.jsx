@@ -33,26 +33,75 @@ export class Skill extends Component {
             <h1 className="font-bebas text-9xl underline decoration-dashed text-amber-950 pb-8">
                 Experience
             </h1>
-            <div className='flex space-x-4 text-5xl pb-7 '>
-              <FaGithub />
-              <FaHtml5 />
-              <FaCss3Alt />
-              <IoLogoJavascript />
-              <FaReact />
-              <RiTailwindCssFill />
-              <RiFlutterFill />
-              <FaPython />
-              <FaJava />
-              <SiCplusplus />
-              <FaNodeJs />
-              <SiArduino />
-              <SiMysql />
-              <SiMongodb />
-              <FaDocker />
-              <SiAdobephotoshop />
-              <SiAdobeillustrator />
-              <SiAdobepremierepro />
-            </div>
+            <div className='flex overflow-hidden space-x-4 group'>
+              <div className='flex space-x-4 text-5xl pb-7 animate-loopscroll'>
+                <FaGithub />
+                <FaHtml5 />
+                <FaCss3Alt />
+                <IoLogoJavascript />
+                <FaReact />
+                <RiTailwindCssFill />
+                <RiFlutterFill />
+                <FaPython />
+                <FaJava />
+                <SiCplusplus />
+                <FaNodeJs />
+                <SiArduino />
+                <SiMysql />
+                <SiMongodb />
+                <FaDocker />
+                <SiAdobephotoshop />
+                <SiAdobeillustrator />
+                <SiAdobepremierepro />              
+              </div>
+                       
+              <div className='flex space-x-4 text-5xl pb-7 animate-loopscroll' aria-hidden="true">
+                <FaGithub />
+                <FaHtml5 />
+                <FaCss3Alt />
+                <IoLogoJavascript />
+                <FaReact />
+                <RiTailwindCssFill />
+                <RiFlutterFill />
+                <FaPython />
+                <FaJava />
+                <SiCplusplus />
+                <FaNodeJs />
+                <SiArduino />
+                <SiMysql />
+                <SiMongodb />
+                <FaDocker />
+                <SiAdobephotoshop />
+                <SiAdobeillustrator />
+                <SiAdobepremierepro />              
+              </div>
+            
+              <div className='flex space-x-4 text-5xl pb-7 animate-loopscroll' aria-hidden="true">
+                <FaGithub />
+                <FaHtml5 />
+                <FaCss3Alt />
+                <IoLogoJavascript />
+                <FaReact />
+                <RiTailwindCssFill />
+                <RiFlutterFill />
+                <FaPython />
+                <FaJava />
+                <SiCplusplus />
+                <FaNodeJs />
+                <SiArduino />
+                <SiMysql />
+                <SiMongodb />
+                <FaDocker />
+                <SiAdobephotoshop />
+                <SiAdobeillustrator />
+                <SiAdobepremierepro />              
+              </div>
+              
+             </div> 
+             
+
+             
+
             <p className="font-mitr font-thin">
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit exercitationem iusto ipsam cupiditate ea saepe mollitia, nemo minus expedita! Neque est facere officiis velit dolor incidunt rerum iusto, minus quam? Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus quibusdam dolor nulla aliquam culpa, autem, eligendi quidem dolore sequi quisquam, a doloremque voluptatibus ex obcaecati consequuntur laudantium quaerat porro aspernatur.
             </p>
@@ -65,3 +114,6 @@ export class Skill extends Component {
 }
 
 export default Skill
+
+
+//duplicate the logo because loadder can back round

@@ -1,4 +1,4 @@
-import React, { useLayoutEffect, useRef } from 'react';
+import React, { useLayoutEffect, useRef,useEffect } from 'react';
 import Footer from '../components/Footer';
 import Header from '../components/Header';
 import Banner from '../components/Banner';
@@ -27,6 +27,10 @@ const textn = `แฟ้มสะสมผลงานพอร์ตโฟล�
 เหตุผลที่ข้าพเจ้าอยากเข้าคณะนี้เพราะข้าพเจ้ามีความสนใจและมีความตั้งใจในการศึกษาต่อในคณะเพื่อไปประกอบอาชีพที่ข้าพเจ้าต้องการทำในอนาคต `
 
 const Homepage = () => {
+  useEffect(() => {
+    document.title = "Sanpitch Port";
+  }, []);
+
   const comp = useRef(null);
 
   useLayoutEffect(() => {
