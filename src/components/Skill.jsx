@@ -1,10 +1,10 @@
 import React, { Component } from 'react'
 
 //react icon
-import { FaGithub,FaPython,FaReact ,FaHtml5 ,FaCss3Alt,FaJava } from "react-icons/fa"; 
+import { FaGithub,FaPython,FaReact ,FaHtml5 ,FaCss3Alt,FaJava,FaNodeJs,FaDocker } from "react-icons/fa"; 
 import { IoLogoJavascript } from "react-icons/io5";
 import { RiFlutterFill,RiTailwindCssFill } from "react-icons/ri";
-import { SiCplusplus } from "react-icons/si";
+import { SiCplusplus,SiArduino,SiMysql,SiMongodb,SiAdobephotoshop,SiAdobeillustrator,SiAdobepremierepro } from "react-icons/si";
 
 
 export class Skill extends Component {
@@ -44,6 +44,14 @@ export class Skill extends Component {
               <FaPython />
               <FaJava />
               <SiCplusplus />
+              <FaNodeJs />
+              <SiArduino />
+              <SiMysql />
+              <SiMongodb />
+              <FaDocker />
+              <SiAdobephotoshop />
+              <SiAdobeillustrator />
+              <SiAdobepremierepro />
             </div>
             <p className="font-mitr font-thin">
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit exercitationem iusto ipsam cupiditate ea saepe mollitia, nemo minus expedita! Neque est facere officiis velit dolor incidunt rerum iusto, minus quam? Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus quibusdam dolor nulla aliquam culpa, autem, eligendi quidem dolore sequi quisquam, a doloremque voluptatibus ex obcaecati consequuntur laudantium quaerat porro aspernatur.
