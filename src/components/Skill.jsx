@@ -7,6 +7,7 @@ import { RiFlutterFill,RiTailwindCssFill } from "react-icons/ri";
 import { SiCplusplus,SiArduino,SiMysql,SiMongodb,SiAdobephotoshop,SiAdobeillustrator,SiAdobepremierepro } from "react-icons/si";
 
 
+
 export class Skill extends Component {
   render() {
     return (

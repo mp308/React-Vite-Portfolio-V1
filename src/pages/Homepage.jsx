@@ -5,16 +5,17 @@ import Banner from '../components/Banner';
 import Skill from '../components/Skill';
 import Contact from '../components/Contact';
 import Test from '../components/test';
-
 import fifa from "../assets/images/fifa.png"
 import logo from "../assets/images/logo.png"
-
-
 import ReactTypingEffect from 'react-typing-effect';
 import { motion } from 'framer-motion';
 import gsap from 'gsap';
 import HorizontalScroll from '../components/pre';
 import Content from '../components/Myworkcontent';
+import Classlevel from '../components/Classlevel';
+import FooterBanner from '../components/FooterBanner';
+
+
 
 
 
@@ -76,6 +77,7 @@ const Homepage = () => {
         <Banner />
         <Contact />
         <Skill />
+        <FooterBanner/>
         <Footer />
       </div>
     </>

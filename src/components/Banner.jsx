@@ -75,8 +75,9 @@ function Banner() {
             <div className=' h-[500px] sm:h-[500px] md:h-[700px] lg:h-[800px] w-full m-auto py-16 px-4 relative group'>
                 <div
                     style={{ backgroundImage: `url(${slides[currentIndex].url})` }}
-                    className='w-full h-full rounded-2xl bg-center bg-cover duration-500'
-                ><h1 className='font-bebas text-outline text-8xl p-5 z-10 text-transparent'>Recommend</h1></div>
+                    className='w-full h-full rounded-tr-4xl rounded-bl-4xl bg-center bg-cover duration-500'
+                > <h1 className='font-bebas text-outline text-8xl p-5 absolute text-transparent'>Recommend</h1>
+                <h1 className='font-bebas text-8xl p-5 animate-movement-text' style={{ textShadow: '4px 4px 4px rgba(0, 0, 0, 0.3)' }}>Recommend</h1> </div>
                 {/* Left Arrow */}
                 <div className='hidden group-hover:block absolute top-[50%] -translate-x-0 translate-y-[-50%] left-5 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer'>
                     <BsChevronCompactLeft onClick={prevSlide} size={30} />
