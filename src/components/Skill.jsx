@@ -17,7 +17,7 @@ export class Skill extends Component {
       <div className='text-white'>
       <div className='p-9 rounded-full '>
             <div className="p-9 bg-yellow-900 rounded-t-3xl">
-            <h1 className=" text-9xl text-amber-500 pb-8 font-title font-bold">
+            <h1 className="text-4xl sm:text-6xl lg:text-9xl text-amber-500 pb-8 font-title font-bold">
             ซอฟต์สกิล
             </h1>
             <p className="font-mitr font-thin">
@@ -27,7 +27,7 @@ export class Skill extends Component {
             </div>
             
             <div className="p-9 bg-yellow-700 rounded-b-3xl text-right">
-            <h1 className="text-9xl text-amber-950 pb-8 font-title font-bold">
+            <h1 className="text-4xl sm:text-6xl lg:text-9xl text-amber-500 pb-8 font-title font-bold">
                 ฮาร์ทสกิล
             </h1>
             <div className='flex overflow-hidden space-x-4 group'>

@@ -24,7 +24,7 @@ export class WelcomBanner extends Component {
             repeatType: 'mirror',
           }}
         >
-          <img src={Flower} alt="Flower" className="w-16 h-16 sm:w-24 sm:h-24 md:w-32 md:h-32" />
+          <img src={Flower} alt="Flower" className="w-12 h-12 sm:w-16 sm:h-16 md:w-24 md:h-24" />
         </motion.div>
 
         {/* Animated Cercel */}
@@ -39,7 +39,7 @@ export class WelcomBanner extends Component {
             repeat: Infinity,
           }}
         >
-          <img src={Cercel} alt="Cercel" className="w-12 h-12 sm:w-16 sm:h-16 md:w-24 md:h-24" />
+          <img src={Cercel} alt="Cercel" className="w-8 h-8 sm:w-12 sm:h-12 md:w-16 md:h-16" />
         </motion.div>
 
         {/* Animated Circle */}
@@ -54,7 +54,7 @@ export class WelcomBanner extends Component {
             repeat: Infinity,
           }}
         >
-          <img src={Circle} alt="Circle" className="w-16 h-16 sm:w-20 sm:h-20 md:w-28 md:h-28" />
+          <img src={Circle} alt="Circle" className="w-12 h-12 sm:w-16 sm:h-16 md:w-20 md:h-20" />
         </motion.div>
 
         {/* Animated Som */}
@@ -69,28 +69,27 @@ export class WelcomBanner extends Component {
             repeat: Infinity,
           }}
         >
-          <img src={Som} alt="Som" className="w-16 h-16 sm:w-24 sm:h-24 md:w-32 md:h-32" />
+          <img src={Som} alt="Som" className="w-12 h-12 sm:w-16 sm:h-16 md:w-24 md:h-24" />
         </motion.div>
 
-
-        <div className="mb-8">
-          <span className="inline-block bg-[#1685b8] rounded-full px-4 py-2 text-2xl md:text-3xl font-bebas text-white shadow-lg">
+        <div className="mb-8 px-4">
+          <span className="inline-block bg-[#1685b8] rounded-full px-4 py-2 text-xl sm:text-2xl md:text-3xl font-bebas text-white shadow-lg">
             Sanpitch Phuvapaisankit
           </span>
         </div>
-        <div className="text-center space-y-6">
-          <div className="text-6xl text-yellow-50 font-bold 2xl:text-9xl">
+        <div className="text-center space-y-6 px-4">
+          <div className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl 2xl:text-9xl text-yellow-50 font-bold">
             <div className="mb-4">
-              I'm <span className="inline-block text-6xl 2xl:text-9xl"><ReactTypingEffect
+              I'm <span className="inline-block"><ReactTypingEffect
                 text={["an Intern student", "a UX/Ui Designer", "a FrontEnd Dev"]}
               /></span>
             </div>
           </div>
-          <div className="text-l md:text-xl text-gray-200 max-w-2xl mx-auto px-4">
+          <div className="text-sm sm:text-base md:text-lg text-gray-200 max-w-2xl mx-auto px-4">
             I am seeking a UX/UI Design and FrontEnd Intern position to apply my skills and knowledge in a real-world setting.
           </div>
         </div>
-        <div className="mt-48 text-5xl lg:text-7xl text-yellow-50 animate-bounce">
+        <div className="mt-48 text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl text-yellow-50 animate-bounce">
           <RxDoubleArrowDown />
         </div>
       </div>
