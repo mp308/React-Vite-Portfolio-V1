@@ -14,6 +14,7 @@ import HorizontalScroll from '../components/pre';
 import Content from '../components/Myworkcontent';
 import FooterBanner from '../components/FooterBanner';
 import WelcomBanner from '../components/WelcomBanner';
+import Certi from '../components/Certi';
 
 
 
@@ -79,6 +80,7 @@ const Homepage = () => {
         <Contact />
         <Skill />
         <FooterBanner/>
+         <Certi/>
         <Footer />
       </div>
     </>
