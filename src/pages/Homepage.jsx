@@ -12,8 +12,8 @@ import { motion } from 'framer-motion';
 import gsap from 'gsap';
 import HorizontalScroll from '../components/pre';
 import Content from '../components/Myworkcontent';
-import Classlevel from '../components/Classlevel';
 import FooterBanner from '../components/FooterBanner';
+import WelcomBanner from '../components/WelcomBanner';
 
 
 
@@ -72,8 +72,9 @@ const Homepage = () => {
             className='text-4xl md:text-6xl lg:text-9xl '>Graphics & Webdev</h1>
         </div>
       </div>
-      <div id='welcome ' className="bg-[#1a1a1a] text-white" >
+      <div id='welcome ' className="bg-[#1b1b1b] text-white" >
         <Header />
+        <WelcomBanner/>
         <Banner />
         <Contact />
         <Skill />

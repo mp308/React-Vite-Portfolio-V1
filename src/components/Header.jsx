@@ -1,53 +1,53 @@
-import React, { useEffect } from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import logo from "../assets/images/logo.png";
+import { FaHamburger } from "react-icons/fa";
+import { TbHttpDelete } from "react-icons/tb";
 
 function Header() {
-    // useEffect(() => {
-    //     const handleMouseOver = event => {
-    //         let iteration = 0;
-    //         const letters = "abcdefghijklmnopqrstuvwxyz";
-    //         let interval = setInterval(() => {
-    //             event.target.innerText = event.target.innerText
-    //                 .split("")
-    //                 .map((letter, index) => {
-    //                     if(index < iteration) {
-    //                         return event.target.dataset.value[index];
-    //                     }
-    //                     return letters[Math.floor(Math.random() * 26)];
-    //                 })
-    //                 .join("");
 
-    //             if(iteration >= event.target.dataset.value.length){ 
-    //                 clearInterval(interval);
-    //             }
+    const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-    //             iteration += 1 / 5;
-    //         }, 30);
-    //     };
-
-    //     const hoverElements = document.querySelectorAll(".hover-effect");
-    //     hoverElements.forEach(element => {
-    //         element.addEventListener("mouseover", handleMouseOver);
-
-    //         return () => {
-    //             element.removeEventListener("mouseover", handleMouseOver);
-    //         };
-    //     });
-    // }, []);
+    const toggleMenu = () => {
+        setIsMenuOpen(!isMenuOpen) // !false = ture
+    }
 
     return (
-        <div className="bg-black p-6 text-white flex justify-between items-center">
-            <Link to="/" className="flex items-center">
-                <img className="h-20 w-auto flex " src={logo} alt="CEO" />
-            </Link>
-            <div className="space-x-6 text-3xl">
-                <Link to="/" className="hover:underline font-bebas hover-effect" data-value="Home">Home</Link>
-                <Link to="/MyArtWork" className="hover:underline font-bebas hover-effect" data-value="MyArtWork">MyArtWork</Link>
-                <Link to="/Myworkpage" className="hover:underline font-bebas hover-effect" data-value="MyWork">MyWork</Link>
-                <Link to="/Myteam" className="hover:underline font-bebas hover-effect" data-value="Teamate">Teamate</Link>
+        <nav className="bg-black p-6 text-white ">
+
+            <div className="flex justify-between items-center">
+                <Link to="/" >
+                    <img className="h-20 w-auto flex " src={logo} alt="CEO" />
+                </Link>
+
+                <div>
+
+                    {/*toggle menu button*/}
+                    <div className="md:hidden text-3xl">
+                        <FaHamburger id='menu-toggle' className="hover:text-yellow-500 transition delay-50 duration-300 ease-in-out" onClick={toggleMenu} />
+                    </div>
+
+                    <div className="hidden md:flex space-x-6 text-3xl ">
+                        <Link to="/" className=" font-bebas hover:text-yellow-500 transition delay-150 duration-300 ease-in-out " >Home</Link>
+                        <Link to="/MyArtWork" className=" font-bebas  hover:text-yellow-500 transition delay-50 duration-300 ease-in-out" >MyArtWork</Link>
+                        <Link to="/Myworkpage" className=" font-bebas hover:text-yellow-500 transition delay-50 duration-300 ease-in-out" >MyWork</Link>
+                        <Link to="/Myteam" className=" font-bebas hover:text-yellow-500 transition delay-50 duration-300 ease-in-out" >Teamate</Link>
+                    </div>
+
+
+                </div>
+
             </div>
-        </div>
+            {/*moble menu*/}
+            {isMenuOpen ? (
+                <div className=" md:hidden flex-row flex justify-center text-2xl space-x-4 pt-4">
+                    <Link to="/" className=" font-bebas hover:text-yellow-500 transition delay-50 duration-300 ease-in-out " >Home</Link>
+                    <Link to="/MyArtWork" className=" font-bebas  hover:text-yellow-500 transition delay-50 duration-300 ease-in-out" >MyArtWork</Link>
+                    <Link to="/Myworkpage" className=" font-bebas hover:text-yellow-500 transition delay-50 duration-300 ease-in-out" >MyWork</Link>
+                    <Link to="/Myteam" className=" font-bebas hover:text-yellow-500 transition delay-50 duration-300 ease-in-out" >Teamate</Link>
+                </div>
+            ) : null}
+        </nav>
     );
 }
 

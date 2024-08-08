@@ -11,7 +11,8 @@ export default {
         mitr: ['Mitr', 'sans-serif'],
         bebas: ['Bebas Neue', 'sans-serif'],
         noto: ['Noto Sans Thai Looped', 'sans-serif'],
-        embed: ['Permanent Marker', 'sans-serif']
+        embed: ['Permanent Marker', 'sans-serif'],
+        prompt: ['Prompt', 'sans-serif'],
       },
       animation: {
         gradient: "gradient 6s linear infinite",

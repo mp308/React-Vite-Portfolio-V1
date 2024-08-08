@@ -9,6 +9,11 @@ import BannerPic3 from '../assets/images/content3.jpg';
 import BannerPic4 from '../assets/images/content4.jpg';
 import BannerPic5 from '../assets/images/content5.jpg';
 
+import BannerPic6 from '../assets/images/l1.jpg';
+import BannerPic7 from '../assets/images/l2.jpg';
+import BannerPic8 from '../assets/images/l3.jpg';
+import BannerPic9 from '../assets/images/l4.jpg';
+import BannerPic10 from '../assets/images/l5.jpg';
 
 
 let bannerData = {
@@ -35,6 +40,22 @@ function Banner() {
         {
             url: BannerPic5,
         },
+        {
+            url: BannerPic6,
+        },
+        {
+            url: BannerPic7,
+        },
+        {
+            url: BannerPic8,
+        },
+        {
+            url: BannerPic9,
+        },
+        {
+            url: BannerPic10,
+        },
+
     ];
     
     const [currentIndex, setCurrentIndex] = useState(0);

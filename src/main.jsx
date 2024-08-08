@@ -13,6 +13,9 @@ import About from './backup/Aboutpage';
 import Myartwork from './pages/Myartwork';
 import Teampage from './pages/Teampage';
 import Mywork from './pages/Mywork';
+import Uxui from './pages/uxui';
+import Programing from './pages/programing';
+import Editor from './pages/editor';
 
 
 
@@ -41,6 +44,18 @@ const router = createBrowserRouter([
   {
     path: "Myworkpage",
     element: <Mywork/>,
+  },
+  {
+    path: "Uxui",
+    element: <Uxui/>,
+  },
+  {
+    path: "Programing",
+    element: <Programing/>,
+  },
+  {
+    path: "Editor",
+    element: <Editor/>,
   },
 ]);
 

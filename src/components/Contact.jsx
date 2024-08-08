@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React from 'react'
 import ReactTypingEffect from 'react-typing-effect';
 import gsap from 'gsap';
 import { useEffect,useState } from "react";
@@ -11,14 +11,10 @@ import { IoLogoJavascript } from "react-icons/io5";
 import { RiFlutterFill, RiTailwindCssFill } from "react-icons/ri";
 import { VscVscode } from "react-icons/vsc";
 import fifa from '../assets/images/fifa.png' // pic
-import obj1 from '../assets/images/pix-cre-pru.png'
-import obj2 from '../assets/images/strip-01.png'
 
-const HERO_CONTENT = `this is my web page i love font end dev jub jub 
-                      Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
-                      Quasi, nisi delectus nobis recusandae porro soluta esse animi 
-                      fugit a magnam repellendus ratione placeat nemo laborum 
-                      optio quae debitis excepturi. Est.`
+
+const HERO_CONTENT = `I am seeking an opportunity to work as a UX/UI Design and FrontEnd Intern to apply my skills and knowledge in a real-world setting. I have a passion for front-end development and believe my abilities in designing and developing websites can create exceptional and engaging user experiences.
+Thank you, `
 
 const Contact = () => {
 
@@ -67,7 +63,7 @@ const Contact = () => {
 
   return (
     <>
-      <div className='border-b border-neutral-900 p-8 lg:md-35 text-white'>
+      <div className='p-8 lg:md-35 text-white'>
 
         <div className='flex flex-wrap'>
           <div className='w-full lg:w-1/2'>
@@ -84,7 +80,7 @@ const Contact = () => {
                 Front End Developer
               </span>
               <p className='my-2 max-w-xl py-6 font-light tracking-tighter'>{HERO_CONTENT} <span> <ReactTypingEffect
-                text={["Welcome to my Portfolio", "อย่าหลอกตัวเอง", 'มิสเตอร์หมูหยองบ้องกัญชา']}
+                text={["Welcome to my Portfolio", "I Love Dev", 'FrontEnd']}
               // className="mt-5 text-center text-3xl font-title"
               /></span> </p>
 
@@ -99,7 +95,7 @@ const Contact = () => {
               </div>
               <div className='font-title font-thin pb-20 text-3xl lg:text-left sm:text-center hover:text-gray-600 transition delay-150 duration-300 ease-in-out'>
                 <p>TEL : 0945541469</p>
-                <p>EMAIL : skyfap007@gmail.com</p>
+                <p>EMAIL : spphoto308@gmail.com</p>
               </div>
             </div>
           </div>
