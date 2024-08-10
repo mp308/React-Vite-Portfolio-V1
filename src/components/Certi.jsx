@@ -16,7 +16,7 @@ export class Certi extends Component {
               alt="KU Certificate" 
               className="w-full rounded-lg shadow-lg"
             />
-            <p className="text-center text-white mt-4">KU Certificate - เกียรติบัตรผลการเรียนดีเป็นอันดับที่สองของ สาขาเทคโนโลยีสารสนเทศ ภาคพิเศษ</p>
+            <p className="text-center text-white mt-4 font-mitr">KU Certificate - เกียรติบัตรผลการเรียนดีเป็นอันดับที่สองของ สาขาเทคโนโลยีสารสนเทศ ภาคพิเศษ</p>
           </div>
           <div className="max-w-lg">
             <img 
@@ -24,10 +24,10 @@ export class Certi extends Component {
               alt="HackerRank Certificate" 
               className="w-full rounded-lg shadow-lg"
             />
-            <p className="text-center text-white mt-4">HackerRank Certificate - เกียรติบัตรผลการทดสอบ SQL Basic</p>
+            <p className="text-center text-white mt-4 font-mitr">HackerRank Certificate - เกียรติบัตรผลการทดสอบ SQL Basic</p>
           </div>
         </div>
-      </>
+      </> 
     );
   }
 }

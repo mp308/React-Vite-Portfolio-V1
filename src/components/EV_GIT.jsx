@@ -5,6 +5,10 @@ import iot1 from '../assets/images/HardSkills/iot1.jpg';
 import iot2 from '../assets/images/HardSkills/iot2.jpg';
 import iot3 from '../assets/images/HardSkills/iot3.jpg';
 
+import data01 from '../assets/images/HardSkills/data01.jpg';
+import data02 from '../assets/images/HardSkills/data02.jpg';
+import data03 from '../assets/images/HardSkills/data03.jpg';
+
 export class EV_GIT extends Component {
   constructor(props) {
     super(props);
@@ -67,19 +71,19 @@ export class EV_GIT extends Component {
           
           <div className="bg-white p-4 md:p-6 rounded-lg shadow-md">
               <h2 className="text-xl md:text-2xl text-gray-800 mb-4 font-bebas">mp308.github.io</h2>
-              <p className="text-gray-600 text-sm md:text-base">
+              <p className="text-gray-600 text-sm md:text-base font-mitr">
                 โปรเจกต์เว็บเพจที่แสดงผลงานของผม โดยพัฒนาโดยใช้ React และ Vite. โปรเจกต์นี้ยังได้เรียนรู้เทคนิคใหม่ ๆ เช่น การใช้ Framer Motion และ GSAP สำหรับการทำแอนิเมชัน, รวมถึงการใช้ Tailwind CSS เพื่อจัดการกับสไตล์ CSS ได้อย่างมีประสิทธิภาพและสะดวกยิ่งขึ้น
               </p>
             </div>
             
             <div className="bg-white p-4 md:p-6 rounded-lg shadow-md">
               <h2 className="text-xl md:text-2xl text-gray-800 mb-4 font-bebas">ARDUINOAPP-MQTTAPI-IOT</h2>
-              <p className="text-gray-600 text-sm md:text-base mb-4">
+              <p className="text-gray-600 text-sm md:text-base mb-4  font-mitr">
                 โปรเจกต์วิชา Design and Development for Internet of Things พัฒนาด้วย ภาษา C บนบอร์ด Arduino ESP32 ซึ่งใช้โมดูลต่าง ๆ ในการรับค่าและ MQTT เพื่อช่วยในการสื่อสารและควบคุมผ่านอินเทอร์เน็ต.
                 <br />
-                <strong>บอร์ด:</strong> Arduino ESP32
+                <span className='font-medium'>บอร์ด:</span> Arduino ESP32
                 <br />
-                <strong>โมดูล:</strong> Relay, Flame, LedPin, Buzzer, Temp and Hum, Photo-interrupter, Avoidance
+                <span className='font-medium'>โมดูล:</span> Relay, Flame, LedPin, Buzzer, Temp and Hum, Photo-interrupter, Avoidance
                 <br />
                 โปรเจกต์นี้มุ่งเน้นการสร้างระบบจำลองห้องพักโดยใช้อุปกรณ์ IoT. ฟีเจอร์หลักของระบบรวมถึง:
                 <br />
@@ -103,36 +107,50 @@ export class EV_GIT extends Component {
             </div>
 
             <div className="bg-white p-4 md:p-6 rounded-lg shadow-md">
+              <h2 className="text-xl md:text-2xl text-gray-800 mb-4 font-bebas">DataProfile_Project</h2>
+              <p className="text-gray-600 text-sm md:text-base mb-4  font-mitr">
+                โปรเจกต์วิชา Big Data Platform and Analytics โดยพัฒนาโดยใช้ Python Spark Pyspak Pandas. โปรเจกต์นี้ยังได้เรียนรู้เทคนิคใหม่ในการทำ Data Profile ทำได้รู้จักหลักการกระทำกับ DataSet ว่าควารจะ ตรวจสอบชุดข้อมูลอย่างไร แกไข้ข้อผิดพลาดอย่างไร และ บันทึกข้อมูลแล้วออกมาวิเคราะห์ทำเป็นกราฟ เพื่อที่จะได้นำข้อมุลต่างๆเอามาใช้ประโยชน์ได้อย่างถูกต้องและครบถ้วน
+              <br />
+              โดยโปรเจคผมได้เลือกเอา <span className='font-medium'>DataSet Google Play Store App data of 2.3 Million+ applications.</span>  ผมได้นำเอาข้อมูลมาวิเคราะห์และตรวจสอบข้อผิดพลาดต่างๆผ่าน PySpak SQL ในการคิวรีเพื่อเรียกดูข้อมูลและแก้ไข่ผ่านคอมมานที่กำหนดและนำข้อมูลมาวิเคราะห์
+              </p>
+              <div className="flex flex-wrap gap-4">
+                <img src={data01} alt="IoT Project 1" className="w-full sm:w-1/4 rounded-lg shadow-md" /> {/* ลดขนาดของภาพ */}
+                <img src={data02} alt="IoT Project 2" className="w-full sm:w-1/4 rounded-lg shadow-md" /> {/* ลดขนาดของภาพ */}
+                <img src={data03} alt="IoT Project 3" className="w-full sm:w-1/4 rounded-lg shadow-md" /> {/* ลดขนาดของภาพ */}
+              </div>
+            </div>
+
+            <div className="bg-white p-4 md:p-6 rounded-lg shadow-md">
               <h2 className="text-xl md:text-2xl text-gray-800 mb-4 font-bebas">DARTAPP-MQTTAPI-IOT</h2>
-              <p className="text-gray-600 text-sm md:text-base">
+              <p className="text-gray-600 text-sm md:text-base  font-mitr">
                 โปรเจกต์การพัฒนาแอปพลิเคชันโดยใช้ Dart เพื่อรับข้อมูลจาก MQTT และแสดงผลข้อมูลในแอป. แอปนี้อนุญาตให้ผู้ใช้ดูข้อมูลจากโมดูลต่าง ๆ และควบคุมการทำงานของโมดูลเหล่านั้นได้อย่างมีประสิทธิภาพ.
               </p>
             </div>
 
             <div className="bg-white p-4 md:p-6 rounded-lg shadow-md">
               <h2 className="text-xl md:text-2xl text-gray-800 mb-4 font-bebas">VUEAPP-MQTTAPI-IOT</h2>
-              <p className="text-gray-600 text-sm md:text-base">
+              <p className="text-gray-600 text-sm md:text-base  font-mitr">
                 โปรเจกต์การพัฒนาเว็บแอปพลิเคชันโดยใช้ Vue เพื่อรับข้อมูลจาก MQTT และแสดงผลข้อมูลบนเว็บ. แอปนี้ช่วยให้ผู้ใช้สามารถดูข้อมูลจากโมดูลต่าง ๆ และควบคุมการทำงานของโมดูลเหล่านั้นได้อย่างสะดวกและมีประสิทธิภาพ.
               </p>
             </div>
 
             <div className="bg-white p-4 md:p-6 rounded-lg shadow-md">
               <h2 className="text-xl md:text-2xl text-gray-800 mb-4 font-bebas">First-React-FrontEnd</h2>
-              <p className="text-gray-600 text-sm md:text-base">
+              <p className="text-gray-600 text-sm md:text-base  font-mitr">
                 โปรเจกต์การเรียน React เริ่มต้นสำหรับสร้างเว็บหน้าร้านขายของ มีการให้เลือกซื้อ, การตรวจสอบจำนวนสินค้า, และการคิดบิล
               </p>
             </div>
 
             <div className="bg-white p-4 md:p-6 rounded-lg shadow-md">
               <h2 className="text-xl md:text-2xl text-gray-800 mb-4 font-bebas">MiniStoreServices</h2>
-              <p className="text-gray-600 text-sm md:text-base">
+              <p className="text-gray-600 text-sm md:text-base  font-mitr">
                 การบ้านวิชา IT Project: โปรเจกต์นี้ใช้ NodeJS เพื่อพัฒนา API ที่รองรับฟังก์ชัน CRUD (Create, Read, Update, Delete) รวมถึงการใช้งานคำสั่ง Get, Post, Put, Patch. เรียนรู้การใช้ Swagger และ Postman เพื่อทดสอบและตรวจสอบการทำงานของ API ว่าสามารถทำงานได้ตามที่คาดหวัง. นอกจากนี้ยังใช้ Prisma ORM เป็นเครื่องมือในการจัดการข้อมูลในฐานข้อมูล MySQL, ทำให้การจัดการข้อมูลเป็นไปอย่างมีประสิทธิภาพและปลอดภัย
               </p>
             </div>
 
             <div className="bg-white p-4 md:p-6 rounded-lg shadow-md">
               <h2 className="text-xl md:text-2xl text-gray-800 mb-4 font-bebas">StoreWeb-With-Firebase</h2>
-              <p className="text-gray-600 text-sm md:text-base">
+              <p className="text-gray-600 text-sm md:text-base  font-mitr">
                 โปรเจกต์พัฒนาเว็บแอปพลิเคชันร้านค้าออนไลน์โดยใช้ React และ Vite ซึ่งมีฟีเจอร์ครบวงจรสำหรับการจัดการร้านค้า รวมถึงการสั่งซื้อสินค้า, การจัดการสินค้าคงคลัง, การเพิ่มและลบสินค้าจากระบบฐานข้อมูล, และการแสดงสินค้าบนหน้าเว็บ. นอกจากนี้ยังมีฟังก์ชันการเข้าสู่ระบบ (Auth) และการสมัครสมาชิก, การแสดงยอดรวมสินค้า, รวมถึงการจัดการข้อมูลและการเก็บข้อมูลผ่าน Google Firebase ที่ช่วยให้ระบบทำงานได้อย่างรวดเร็วและปลอดภัย.
               </p>
             </div>

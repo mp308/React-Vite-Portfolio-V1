@@ -102,11 +102,14 @@ export class Skill extends Component {
             <p className="font-mitr font-thin">
             ทักษะเฉพาะทาง เป็นทักษะที่สามารถวัดและทดสอบได้ ซึ่งในสายงานไอทีนั้นฮาร์ทสกิลมีความสำคัญอย่างมาก เนื่องจากเป็นทักษะที่ใช้ในการทำงานเกี่ยวกับเทคโนโลยีและระบบต่างๆ ตัวอย่างของฮาร์ทสกิลในสายงานไอทีมีดังนี้
             <br />
-            Program Python Java C++ Dart JavaScript
+             <span className='font-medium'>Program :</span> Python Java C++ Dart JavaScript
             <br />
-            Web HTML CSS Tailwind CSS React Vue.js
+            <span className='font-medium'>Web :</span> HTML CSS Tailwind CSS React Vue.js
             <br />
-            Backend Node.js MongoDB
+            <span className='font-medium'>Backend :</span> Node.js 
+            <br />
+            <span className='font-medium'>DataBase :</span> MongoDB MySQL 
+
 
             </p>
           
