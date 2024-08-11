@@ -22,7 +22,7 @@ function Header() {
                     <div className="md:hidden text-2xl">
                         <FaHamburger
                             id="menu-toggle"
-                            className="hover:text-yellow-500 transition delay-50 duration-300 ease-in-out"
+                            className="text-white hover:text-yellow-500 transition delay-50 duration-300 ease-in-out"
                             onClick={toggleMenu}
                         />
                     </div>
