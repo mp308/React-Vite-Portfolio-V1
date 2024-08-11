@@ -15,19 +15,19 @@ export class Certi extends Component {
     const certificates = [
       {
         imgSrc: KU_CER,
-        description: "KU Certificate - เกียรติบัตรผลการเรียนดีเป็นอันดับที่สองของ สาขาเทคโนโลยีสารสนเทศ ภาคพิเศษ",
+        description: "KU Certificate - เกียรติบัตรผลการเรียนดี สาขาเทคโนโลยีสารสนเทศ ภาคพิเศษ",
       },
       {
         imgSrc: KU_CER65,
-        description: "KU Certificate - Example description for certificate 65",
+        description: "KU Certificate - เกียรติบัตรผลการทดสอบ สาขาเทคโนโลยีสารสนเทศ ภาคพิเศษ 65",
       },
       {
         imgSrc: KU_CER66,
-        description: "KU Certificate - Example description for certificate 66",
+        description: "KU Certificate - เกียรติบัตรผลงานดีเด่น สาขาเทคโนโลยีสารสนเทศ ภาคพิเศษ",
       },
       {
         imgSrc: KU_CER67,
-        description: "KU Certificate - Example description for certificate 67",
+        description: "KU Certificate - เกียรติบัตรผลการทดสอบ สาขาเทคโนโลยีสารสนเทศ ภาคพิเศษ 67",
       },
       {
         imgSrc: HackerRank_CER_sql_ba,

@@ -16,6 +16,7 @@ import Mywork from './pages/Mywork';
 import Uxui from './pages/uxui';
 import Programing from './pages/programing';
 import Editor from './pages/editor';
+import Certifi from './pages/Certifi';
 
 
 
@@ -56,6 +57,10 @@ const router = createBrowserRouter([
   {
     path: "Editor",
     element: <Editor/>,
+  },
+  {
+    path: "Certifi",
+    element: <Certifi/>,
   },
 ]);
 
