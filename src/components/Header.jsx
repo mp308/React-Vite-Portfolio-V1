@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import logo from "../assets/images/logo.png";
 import { FaHamburger } from "react-icons/fa";
+import { GiHamburgerMenu } from "react-icons/gi";
 
 function Header() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -19,10 +20,10 @@ function Header() {
 
                 <div>
                     {/* Toggle menu button */}
-                    <div className="md:hidden text-2xl">
-                        <FaHamburger
+                    <div className="md:hidden text-3xl">
+                        <GiHamburgerMenu
                             id="menu-toggle"
-                            className="text-white hover:text-yellow-500 transition delay-50 duration-300 ease-in-out"
+                            className="hover:text-yellow-500 transition delay-50 duration-300 ease-in-out"
                             onClick={toggleMenu}
                         />
                     </div>
@@ -39,7 +40,7 @@ function Header() {
 
             {/* Mobile menu */}
             <div
-                className={`md:hidden flex flex-col items-center text-xl space-y-4 pt-4 transition-all duration-500 ease-in-out overflow-hidden ${
+                className={`md:hidden flex flex-col items-center text-xl space-y-4 pt-2 transition-all duration-500 ease-in-out overflow-hidden ${
                     isMenuOpen ? "max-h-screen opacity-100" : "max-h-0 opacity-0"
                 }`}
             >
